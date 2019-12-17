@@ -13,16 +13,16 @@ const PathToRegexpLib = require("path-to-regexp");
 
 function findRule(path) {
   // 若文件变动，需更新模块缓存
-  console.log(path)
   let data = require(global.__mockDataDir);
   let rule = data[path] || data["/" + path];
   if (rule === undefined) {
-	let keys = Object.keys(data);
+    let keys = Object.keys(data);
     keys.some(key => {
-	  let keyRegexp = PathToRegexpLib.pathToRegexp(key);
+      // following the https://github.com/pillarjs/path-to-regexp
+      let keyRegexp = PathToRegexpLib.pathToRegexp(key);
       if (keyRegexp.test(path)) {
-		rule = data[key];
-		return true;
+        rule = data[key];
+        return true;
       }
     });
   }
