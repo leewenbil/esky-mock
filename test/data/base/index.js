@@ -39,5 +39,15 @@ module.exports = {
       }
     }
   },
-  'com/verifycode': '@image("90x30", "#50B347", "#FFF", "code")'
+  'com/verifycode': '@image("90x30", "#50B347", "#FFF", "code")',
+  'com/:id(\\d+)':  {
+    // following the https://github.com/pillarjs/path-to-regexp
+    retcode: 200,
+    retdesc: 'pathToRegexp--:id(\\d+)'
+  },
+  'com/:name':  {
+    // following the https://github.com/pillarjs/path-to-regexp
+    retcode: 200,
+    retdesc: 'pathToRegexp--:name'
+  },
 }
