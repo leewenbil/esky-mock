@@ -135,11 +135,11 @@ config.devServer = {
 // support the key, which is one regular expression
 // following the https://github.com/pillarjs/path-to-regexp
 {
-  'com/:id(\\d+)':  {
+  'com/:id(\\d+)': {
     retcode: 200,
     retdesc: 'pathToRegexp--:id(\\d+)'
   },
-  'com/:name':  {
+  'com/:name': {
     retcode: 200,
     retdesc: 'pathToRegexp--:name'
   },
