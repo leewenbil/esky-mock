@@ -131,6 +131,21 @@ config.devServer = {
 }
 ~~~
 
+~~~js
+// support the key, which is one regular expression
+// following the https://github.com/pillarjs/path-to-regexp
+{
+  'com/:id(\\d+)':  {
+    retcode: 200,
+    retdesc: 'pathToRegexp--:id(\\d+)'
+  },
+  'com/:name':  {
+    retcode: 200,
+    retdesc: 'pathToRegexp--:name'
+  },
+}
+~~~
+
 ## JSON接口
 
 [推荐接口标准](https://github.com/esky/esky-mock/blob/master/JSON.md)
