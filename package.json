@@ -1,6 +1,6 @@
 {
   "name": "esky-mock",
-  "version": "1.1.1-ext",
+  "version": "1.1.1-regular",
   "description": "假数据服务器",
   "main": "src/server",
   "bin": {
@@ -10,7 +10,7 @@
     "esky",
     "mock"
   ],
-  "author": "esky",
+  "author": "esky-and-leewenbil",
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
