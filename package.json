@@ -1,7 +1,7 @@
 {
   "name": "esky-mock-regular",
   "version": "1.2.0",
-  "description": "假数据服务器",
+  "description": "Base on the 'esky-mock', mock the data for the server api, and support the key which is one regular expresson",
   "main": "src/server",
   "bin": {
     "esky-mock": "./src/bin/esky-mock.js"
